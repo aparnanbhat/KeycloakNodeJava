@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    username: postgres
+    password: password
+    url: jdbc:postgresql://localhost:5432/example
+    schema: backend
+    database: example
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        default_schema: backend
+        jdbc:
+          batch_size: 1000
+        order_inserts: true
+        generate_statistics: false
+    hibernate:
+      default_schema: backend
+      ddl-auto: update
+
+keycloak:
+  realm: xpressbees
+  auth-server-url: https://stage-auth.xbees.in
+  resource: billing-ui
+  bearer-only: true

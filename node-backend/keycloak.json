@@ -1,0 +1,8 @@
+{
+    "realm": "xpressbees",
+    "auth-server-url": "https://stage-auth.xbees.in",
+    "ssl-required": "external",
+    "resource": "billing-ui",
+    "public-client": true,
+    "confidential-port": 0
+  }
